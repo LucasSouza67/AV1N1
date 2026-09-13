@@ -1,0 +1,321 @@
+/* ========================================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #0b0f0c;
+    color: #e8e8e3;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(11, 15, 12, 0.95);
+    border-bottom: 1px solid rgba(214, 199, 161, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: #d6d6d0 !important;
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d6c7a1 !important;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 8, 6, 0.95),
+            rgba(5, 8, 6, 0.65),
+            rgba(5, 8, 6, 0.25)
+        ),
+        url("../imagens/hero.webp");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding-top: 60px;
+}
+
+.hero-subtitle {
+    color: #a6b292;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #a6b292;
+}
+
+.hero h1 span {
+    display: block;
+    color: #a6b292;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    color: #d0d0ca;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+/* BOTÃO */
+/* ========================================= */
+.btn-primary {
+    background-color: #58684d;
+
+    border-color: #58684d;
+
+    border-radius: 3px;
+
+    padding: 12px 30px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #718261;
+
+    border-color: #718261;
+
+    transform: translateY(-2px);
+}
+/* SEÇÕES */
+.section {
+    padding: 100px 0;
+}
+
+.section-dark {
+    background-color: #101510;
+}
+
+.section h2 {
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.section-subtitle {
+    color: #8d9d7b;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+/* INFORMAÇÕES DO JOGO */
+.game-info {
+    background-color: #151b16;
+
+    border: 1px solid #293128;
+
+    border-left: 4px solid #6b7d5c;
+
+    padding: 30px;
+
+    border-radius: 3px;
+}
+
+.game-info div {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #293128;
+}
+
+.game-info div:last-child {
+    border-bottom: none;
+}
+
+.game-info strong {
+    color: #a6b292;;
+}
+
+.game-info span {
+    color: #b4b5ae;
+}
+/* CARDS */
+.feature-card {
+    background-color: #151b16;
+
+    color: #e8e8e3;
+
+    border: 1px solid #293128;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #6b7d5c;
+
+    background-color: #192019;
+}
+
+.feature-number {
+    color: #6b7d5c;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #d6c7a1;
+
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #aeb1a9;
+
+    line-height: 1.7;
+}
+/* GALERIA */
+.gallery-img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+
+    filter: brightness(0.8);
+
+    transition: 0.4s;
+}
+
+.gallery-img:hover {
+    filter: brightness(1);
+
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #070a08;
+
+    border-top: 1px solid #293128;
+
+    padding: 50px 0;
+
+    color: #898c85;
+}
+
+.footer h3 {
+    color: #d6c7a1;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.footer strong {
+    color: #b3bdab;
+}
+.footer a {
+    color: #d6d6d0;
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #d6c7a1;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .hero {
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h2 {
+        font-size: 2.3rem;
+    }
+
+    .game-info {
+        margin-top: 40px;
+    }
+
+}
